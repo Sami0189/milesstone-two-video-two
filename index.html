@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive Flex</title>
+    <style>
+        .container{
+            display: flex;
+            gap: 20px;
+        }
+        .box{
+            background-color: chartreuse ;
+            padding:20px ;
+            border-radius: 10px;
+        }
+         .item{
+            width: 200px;
+            height: 100px;
+            background-color: crimson;
+            border: 5px dashed rgb(235, 16, 255); 
+            
+        }
+        .container2{ 
+                 display: flex;
+                 flex-wrap: wrap;
+                 gap: 20px;
+
+            }
+        @media screen and (max-width:576px) {
+            .container{
+                flex-direction: column-reverse;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Flexibke Flex</h2>
+    <div class="container">
+        <div class="box">
+            <h3>First Box</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil velit ullam molestias iste vero vitae ut mollitia officiis tenetur, voluptatem animi dignissimos illum doloremque. Accusamus consectetur cupiditate assumenda dicta maxime vero veniam. Eos nostrum veniam blanditiis id illum. Consequatur, accusantium dolore quos fugiat sapiente ea velit vitae et nam quas.</p>
+        </div>
+        <div class="box">
+            <h3>Second Box</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, enim asperiores exercitationem blanditiis facilis nisi explicabo aliquam a illo natus libero doloribus voluptatem beatae dolores cupiditate veniam? Accusamus nulla sint eos laudantium voluptatibus! Quae ipsa doloribus enim inventore odit autem corrupti. Vel voluptas est consequuntur officiis porro corporis, ullam quos.</p>
+
+        </div>
+    </div>
+       <div class="container2">
+        <div class="item">item - 1</div>
+        <div class="item">item - 2</div>
+        <div class="item">item - 3</div>
+        <div class="item">item - 4</div>
+        <div class="item">item - 5</div>
+        <div class="item">item - 6</div>
+        <div class="item">item - 7</div>
+        <div class="item">item - 8</div>
+        <div class="item">item - 9</div>
+        <div class="item">item - 10</div>
+       </div> 
+
+    
+</body>
+</html>
